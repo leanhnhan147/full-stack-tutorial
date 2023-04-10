@@ -33,10 +33,10 @@ API được xây dựng trên chính 2 thành phần: **Request** và **Reponse
 
 Một cái request đúng chuẩn cần có 4 thứ:
 
-    - **URL**
-    - **Method**
-    - **Headers**
-    - **Body**
+  - **URL**
+  - **Method**
+  - **Headers**
+  - **Body**
 
   #### 1. URL
   
@@ -46,15 +46,15 @@ Một cái request đúng chuẩn cần có 4 thứ:
 
   HTTP request có tất cả **9 loại method** , 2 loại được sử dụng **phổ biến nhất** là **GET** và **POST**
 
-    - **GET**: Sử dụng để lấy thông tin từ server theo URI đã cung cấp.
-    - **HEAD**: Giống với GET nhưng response trả về không có body, chỉ có header.
-    - **POST**: Gửi thông tin tới sever thông qua các parameters HTTP.
-    - **PUT**: Ghi đè tất cả thông tin của đối tượng với những gì được gửi lên.
-    - **PATCH**: Ghi đè các thông tin được thay đổi của đối tượng.
-    - **DELETE**: Xóa resource trên server.
-    - **CONNECT**: Thiết lập một kết nối tới server theo URI.
-    - **OPTIONS**: Mô tả các tùy chọn giao tiếp cho resource.
-    - **TRACE**: Thực hiện một bài test loop-back theo đường dẫn đến resource.
+  - **GET**: Sử dụng để lấy thông tin từ server theo URI đã cung cấp.
+  - **HEAD**: Giống với GET nhưng response trả về không có body, chỉ có header.
+  - **POST**: Gửi thông tin tới sever thông qua các parameters HTTP.
+  - **PUT**: Ghi đè tất cả thông tin của đối tượng với những gì được gửi lên.
+  - **PATCH**: Ghi đè các thông tin được thay đổi của đối tượng.
+  - **DELETE**: Xóa resource trên server.
+  - **CONNECT**: Thiết lập một kết nối tới server theo URI.
+  - **OPTIONS**: Mô tả các tùy chọn giao tiếp cho resource.
+  - **TRACE**: Thực hiện một bài test loop-back theo đường dẫn đến resource.
 
   #### 3. Headers
 
@@ -72,9 +72,9 @@ Sau khi nhận được request từ phía client, server sẽ xử lý cái req
 
 Tóm lại, nó có **cầu trúc 3 phần:**
 
-    - **Status code**
-    - **Headers**
-    - **Body**: Phần Header và body tương đối giống với request.
+  - **Status code**
+  - **Headers**
+  - **Body**: Phần Header và body tương đối giống với request.
 
   #### Status code
 
@@ -82,13 +82,13 @@ Tóm lại, nó có **cầu trúc 3 phần:**
   
   Có 5 giá trị của ký tự đầu tiên:
 
-    - **1xx: Information (Thông tin)**: Khi nhận được những mã như vậy tức là request đã được server tiếp nhận và quá trình xử lý request đang được tiếp tục.
-    - **2xx: Success (Thành công)**: Khi nhận được những mã như vậy tức là request đã được server tiếp nhận, hiểu và xử lý thành công
-    - **3xx: Redirection (Chuyển hướng)**: Mã trạng thái này cho biết client cần có thêm action để hoàn thành request
-    - **4xx: Client Error (Lỗi Client)**: Nó nghĩa là request chứa cú pháp không chính xác hoặc không được thực hiện.
-    - **5xx: Server Error (Lỗi Server)**: Nó nghĩa là Server thất bại với việc thực hiện một request nhìn như có vẻ khả thi.
+  - **1xx: Information (Thông tin)**: Khi nhận được những mã như vậy tức là request đã được server tiếp nhận và quá trình xử lý request đang được tiếp tục.
+  - **2xx: Success (Thành công)**: Khi nhận được những mã như vậy tức là request đã được server tiếp nhận, hiểu và xử lý thành công
+  - **3xx: Redirection (Chuyển hướng)**: Mã trạng thái này cho biết client cần có thêm action để hoàn thành request
+  - **4xx: Client Error (Lỗi Client)**: Nó nghĩa là request chứa cú pháp không chính xác hoặc không được thực hiện.
+  - **5xx: Server Error (Lỗi Server)**: Nó nghĩa là Server thất bại với việc thực hiện một request nhìn như có vẻ khả thi.
 
-  #### Ví dụ về request – response trong API
+  ## Ví dụ về request – response trong API
 
   Khi bạn sử dụng một ứng dụng trên điện thoại di động, ứng dụng kết nối Internet và gửi dữ liệu tới máy chủ. Máy chủ sau đó lấy ra dữ liệu đó, diễn giải nó, thực hiện các hành động cần thiết và gửi nó trở lại điện thoại của bạn. Ứng dụng sau đó giải thích dữ liệu đó và trình bày cho bạn thông tin bạn muốn theo cách có thể đọc được. Đây là những gì một API là – tất cả điều này xảy ra thông qua API.
 
