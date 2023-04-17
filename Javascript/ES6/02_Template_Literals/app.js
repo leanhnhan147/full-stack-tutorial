@@ -56,8 +56,8 @@ console.log(lines2);    // Output:  Line 1
                         
 // Template String
 const lines3 = `Line 1
-                Line 2
-                Line 3`;
+Line 2
+Line 3`;
 
 console.log(lines3);    // Output:  Line 1
                         //          Line 2
