@@ -7,24 +7,24 @@ Farmerboy vừa mới học về chuỗi nguyên tố. Một chuỗi gọ
 - In ra T dòng ứng với mỗi test, in ra YES nếu chuỗi là Chuyễi nguyên tố, ngược lại in ra NO
 
 #### Giới hạn
-1 <= T <= 10
-1 <= Độ dài chuỗi <= 100000
+- 1 <= T <= 10
+- 1 <= Độ dài chuỗi <= 100000
 
 | INPUT  | OUTPUT |
 | ------ | ------ |
-| 2      | YES    |
-| ababb  | NO     |
-| abcabb |        |
+| 2      |        |
+| ababb  | YES    |
+| abcabb | NO     |
 
 #### Giải thích
 - Test 1: 
   - Có 2 ký tự khác nhau xuất hiện: a, b
   - Ký tự a xuất hiện 2 lần
   - Ký tự b xuất hiện 3 lần
->>> YES
+> YES
 - Test 2:
   - Có 3 ký tự khác nhau xuất hiện: a, b, c
   - Ký tự a xuất hiện 2 lần
   - Ký tự b xuất hiện 2 lần
   - Ký tự c xuất hiện 1 lần (Không phải số nguyên tố)
->>> NO
+> NO
