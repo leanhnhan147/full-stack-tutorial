@@ -21,10 +21,10 @@ Farmerboy vừa mới học về chuỗi nguyên tố. Một chuỗi gọ
   - Có 2 ký tự khác nhau xuất hiện: a, b
   - Ký tự a xuất hiện 2 lần
   - Ký tự b xuất hiện 3 lần
-> YES
+> OUTPUT: YES
 - Test 2:
   - Có 3 ký tự khác nhau xuất hiện: a, b, c
   - Ký tự a xuất hiện 2 lần
   - Ký tự b xuất hiện 2 lần
   - Ký tự c xuất hiện 1 lần (Không phải số nguyên tố)
-> NO
+> OUTPUT: NO
