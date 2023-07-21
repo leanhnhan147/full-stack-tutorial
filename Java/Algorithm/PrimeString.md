@@ -28,3 +28,57 @@ Farmerboy vừa mới học về chuỗi nguyên tố. Một chuỗi gọ
   - Ký tự b xuất hiện 2 lần
   - Ký tự c xuất hiện 1 lần (Không phải số nguyên tố)
 > OUTPUT: NO
+
+#### Source Code
+``` java
+public class PrimeString {
+
+     public static boolean isPrime(int x){
+        for(int i = 2; i * i <= x; ++i){
+            if(x % i == 0){
+                return false;
+            }
+        }
+        return x >= 2;
+    }
+
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        int t = Integer.parseInt(scanner.nextLine());
+
+        int a[] = new int[26];
+        String s;
+        while(t > 0){
+            s = scanner.nextLine();
+            for(int i = 0; i < s.length(); i++){
+                a[s.charAt(i) - 'a']++;
+            }
+            Boolean check = true;
+            int cnt = 0;
+            for(int i = 0; i < 26; ++i){
+                if(a[i] > 0){
+                    cnt++;
+                    if(!isPrime(a[i])){
+                        check = false;
+                        a[i] = 0;
+                        break;
+                    }
+                    a[i] = 0;
+                }
+            }
+
+            if(!isPrime(cnt)){
+                check = false;
+            }
+            if(check){
+                System.out.println("YES");
+            }
+            else{
+                System.out.println("NO");
+            }
+            t--;
+        }
+    }
+}
+
+```
