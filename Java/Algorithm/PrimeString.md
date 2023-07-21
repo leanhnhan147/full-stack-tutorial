@@ -46,11 +46,18 @@ public class PrimeString {
         Scanner scanner = new Scanner(System.in);
         int t = Integer.parseInt(scanner.nextLine());
 
+        // tạo mảng số nguyên 26 phần tử (tương ứng với 26 chữ cái từ a đến z)
+        // a[0] là số lần xuất hiện của ký tự a
+        // a[1] là số lần xuất hiện của ký tự b
+        // cứ thế a[2], a[3], a[4] ... là số lần xuất hiện của ký tự c, d, e
         int a[] = new int[26];
         String s;
         while(t > 0){
             s = scanner.nextLine();
             for(int i = 0; i < s.length(); i++){
+                // s.charAt(i) = ‘a’ thì s.charAt(i) - ‘a’ được hiểu là 97 - 97 = 0
+                // tương tự nếu s.charAt(i) = ‘b’ thì s.charAt(i) - ‘a’ được hiểu là 98 - 97 = 1
+                // có thể để a[s.charAt(i) - 'a']++ hoặc để thẳng a[s.charAt(i) - 97]++ đều được
                 a[s.charAt(i) - 'a']++;
             }
             Boolean check = true;
