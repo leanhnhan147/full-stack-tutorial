@@ -14,7 +14,7 @@
 | 153       | 315    |
 | 555554444 | -1     |
 
-## Hướng giải quyết
+## Solution
 - Ta nhìn thấy để một số muốn thoả mãn là bội số của 45 thì phải thoả mãn đồng thời 2 điều sau:
   - 1/ Tổng các chữ số của số đó phải chia hết cho 9 (vì 4 + 5 = 9)
   - 2/ Chữ số cuối cùng của số đó phải hoặc là 0 hoặc là 5
@@ -78,6 +78,10 @@ int main()
 
 ## Source code
 ```java
+package algrithms;
+
+import java.util.Scanner;
+
 public class BienDoiSo {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
@@ -91,13 +95,13 @@ public class BienDoiSo {
         }
         if (sum % 9 != 0 || (a[0] == 0 && a[5] == 0)) {
             System.out.println(-1);
-        } 
+        }
         else {
             int x;
             if (a[0] == 0 && a[5] != 0) {
                 x = 5;
                 a[5]--;
-            } 
+            }
             else {
                 x = 0;
                 a[0]--;
