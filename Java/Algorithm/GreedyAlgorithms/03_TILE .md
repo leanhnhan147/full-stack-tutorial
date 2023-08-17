@@ -61,5 +61,3 @@ int main(){
   - Độ phức tạp không gian (Space Complexity): O(N) với N là số lượng phần tử của mảng a (số viên gạch).
   - Độ phức tạp thời gian (Time Complexity): O(N) của bước đọc mảng từ input + O(N * logN) của bước sắp xếp giảm dần dùng hàm sort trong STL + O(N) của bước duyệt mảng tìm vị trí idx. Tổng quát theo quy tắc cộng BigO có thể kết luận theo thằng lớn nhất tức là O(N * logN) với N là số lượng phần tử của mảng a (số viên gạch).
 - Vậy ta có thể thấy độ phức tạp thời gian lớn nhất đến từ bước đi sắp xếp mảng giảm dần. Bước này để được tối ưu ta nên dùng hàm sort có sẵn như ở trên. Tuy nhiên vì giới hạn tối đa của N chỉ là 100 theo như đề bài đưa ra, nó quá nhỏ thế nên kể cả các bạn nào đi dùng những thuật toán sắp xếp không tối ưu như Bubble Sort, Interchange Sort, Selection Sort ... với độ phức tạp O(N^2) thì cũng không sợ bị TLE với bài này nhé vì 100^2 cũng chỉ 10^4 thì nó vẫn quá nhỏ so với ngưỡng (3 đến 5)*10^7. Nhưng với mình thì mình thích dùng hàm sort có sẵn vừa tối ưu mà vừa gọn lẹ để gọi ra.
-
-## Source code
