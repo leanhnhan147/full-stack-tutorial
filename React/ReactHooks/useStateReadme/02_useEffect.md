@@ -12,16 +12,19 @@
 - Call API
 
 1. Update DOM
-- F8 blog title
 2. Call API
 3. Listen DOM events
 - Scroll
 - Resize
-3. Cleanup
+4. Cleanup
 - Remove listeners / Unsubcribe
 - Clear timer
 
 
+## Syntax
+- useEffect(callback(), [dependencies])
+
+## Notes
 1. useEffect(callback)
 - Gọi callback mỗi khi component re-render
 - Gọi callback sau khi component thêm elenment vào DOM

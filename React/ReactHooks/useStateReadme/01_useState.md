@@ -1,9 +1,9 @@
 # useState Hooks
 
-## Dùng khi nào?
-Khi muốn dữ liệu thay đổi thì giao diện tự động được cập nhật (render lại theo dữ liệu).
+## When to use State Hooks
+- When you want the data to change, the interface is automatically updated (re-render data).
 
-## Cách dùng
+## Syntax
 
 ``` jsx
 import { useState } from 'react'
@@ -15,7 +15,7 @@ function Component(){
 }
 ```
 
-## Lưu ý
+## Notes
 - Component được re-render sau khi `setState`
 - Initial state chỉ dùng cho lần đầu
 - Set state với callback?
