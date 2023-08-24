@@ -66,7 +66,7 @@
 import { useState } from 'react'
 
 function Component(){
-    const [state, setState] = useState(initState)
+    const [state, setState] = useState(initialState)
 
     ...
 }
@@ -100,19 +100,83 @@ function Component(){
 - Clear timer
 
 ### Syntax
-- useEffect(callback())
-- useEffect(callback(), [])
-- useEffect(callback(), [dependencies])
+1. useEffect(callback())
+2. useEffect(callback(), [])
+3. useEffect(callback(), [dependencies])
 
 ### Notes
 - Callback is always called after component mounted
 
-1. useEffect(callback)
-- Call callback every time the component re-render
-- Call callback after the component add element to DOM
-2. useEffect(callback, [])
-- Only call callback once after component mounted
-3. useEffect(callback, [deps])
-- Callback will be called again every time `deps` changes
+1. useEffect(callback())
+- Call callback() every time the component re-render
+- Call callback() after the component add element to DOM
+2. useEffect(callback(), [])
+- Only call callback() once after component mounted
+3. useEffect(callback(), [deps])
+- callback() will be called again every time `deps` changes
 
 
+
+## Ref hook
+###
+- Lưu các giá trị qua một tham chiếu bên ngoài
+
+### Syntax
+``` jsx
+import { useRef } from 'react'
+
+function Component(){
+    useRef(initialValue)
+    ...
+}
+```
+
+### Notes
+- These is a property (current)
+- Return a mutable object.
+- The return object will persist for the full lifetime of the component
+
+## React memo (HOC)
+###
+- Higher Order Component
+- Tránh việc render không cần thiết
+- Ghi nhớ props của component để quyết định có render component đó hay không
+- render often
+- re-render with same props
+
+### Syntax
+``` jsx
+import { memo } from 'react'
+
+function Component(){
+    ...
+}
+export default memo(Component);
+```
+
+### Notes
+- Khi component cha có nhiều state
+- Khi component cha chứa nhiều conponent con
+
+## Callback hook
+###
+
+### Syntax
+
+### Notes
+
+
+##
+###
+
+### Syntax
+
+### Notes
+
+
+##
+###
+
+### Syntax
+
+### Notes
