@@ -1,5 +1,11 @@
 ## Effect hook
 ### 
+- Handle the side effects
+  - Update DOM
+  - Call API
+  - Listen DOM events: Click, Scroll, Resize, ...
+  - Cleanup: Remove listeners / Unsubcribe, Clear timer,...
+
 - Events: Add / remove event listener
 - Observer pattern: Subsribe / unsubscribe
 - Closure
@@ -19,6 +25,22 @@
 - Clear timer
 
 ### Syntax
+``` jsx
+
+import { useEffect } from 'react'
+
+function Component(){
+    
+    useEffect(callback())
+
+    useEffect(callback(), [])
+
+    useEffect(callback(), [dependencies])
+    ...
+}
+
+```
+
 1. useEffect(callback())
 2. useEffect(callback(), [])
 3. useEffect(callback(), [dependencies])
@@ -31,5 +53,5 @@
 - Call callback() after the component add element to DOM
 2. useEffect(callback(), [])
 - Only call callback() once after component mounted
-3. useEffect(callback(), [deps])
-- callback() will be called again every time `deps` changes
+3. useEffect(callback(), [dependencies])
+- callback() will be called again every time `dependencies` changes

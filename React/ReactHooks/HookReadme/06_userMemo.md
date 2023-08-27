@@ -6,10 +6,14 @@
 
 ### Syntax
 ``` jsx
+
 import { useMemo } from 'react'
 
 function Component(){
+    const value = useMemo(calculateValue, [])
+
     const value = useMemo(calculateValue, [dependencies])
     ...
 }
+
 ```

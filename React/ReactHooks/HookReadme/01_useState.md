@@ -5,6 +5,7 @@
 ### Syntax
 
 ``` jsx
+
 import { useState } from 'react'
 
 function Component(){
@@ -12,6 +13,7 @@ function Component(){
 
     ...
 }
+
 ```
 
 ### Notes

@@ -5,12 +5,14 @@
 
 ### Syntax
 ``` jsx
+
 import { useReducer } from 'react'
 
 function Component(){
     const [state, dispatch] = useReducer(reducer, initialState);
     ...
 }
+
 ```
 
 ### Notes

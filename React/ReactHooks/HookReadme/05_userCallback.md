@@ -6,10 +6,14 @@
 
 ### Syntax
 ``` jsx
+
 import { useCallback } from 'react'
 
 function Component(){
+    const callback = useCallback(function, [])
+
     const callback = useCallback(function, [dependencies])
     ...
 }
+
 ```

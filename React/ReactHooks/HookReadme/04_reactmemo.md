@@ -9,12 +9,14 @@
 
 ### Syntax
 ``` jsx
+
 import { memo } from 'react'
 
 function Component(){
     ...
 }
 export default memo(Component);
+
 ```
 
 ### Notes
