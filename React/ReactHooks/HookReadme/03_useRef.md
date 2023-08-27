@@ -1,6 +1,5 @@
 ## Ref hook
 ###
-- Lưu các giá trị qua một tham chiếu bên ngoài
 - Store a reference to the DOM element
 
 ### Syntax

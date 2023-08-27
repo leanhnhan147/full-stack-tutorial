@@ -1,8 +1,6 @@
 ## Reducer hook
 ###
 
-- Sử dụng khi state nó phức tạp
-
 ### Syntax
 ``` jsx
 

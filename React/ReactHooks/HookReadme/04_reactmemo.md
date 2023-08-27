@@ -18,7 +18,3 @@ function Component(){
 export default memo(Component);
 
 ```
-
-### Notes
-- Khi component cha có nhiều state
-- Khi component cha chứa nhiều conponent con
