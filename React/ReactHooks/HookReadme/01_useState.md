@@ -37,7 +37,8 @@ const DoubleCount = () => {
     setCount(count + 1); // count = 0 => count + 1 = 0 + 1 = 1
     setCount(count + 1); // count = 0 => count + 1 = 0 + 1 = 1
 
-    // fix error handling
+    // Fix error handling Double Counter
+    // Should use Callback
     setCount((count) => count + 1); // count = 0 => count + 1 = 0 + 1 = 1
     setCount((count) => count + 1); // count = 1 => count + 1 = 1 + 1 = 2
   };
