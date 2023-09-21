@@ -30,8 +30,6 @@
 - DO NOT use this keyword when calling variable, function
 - Declare the variable, function with let/const keyword
 
-
-
 # Lesson 06
 
 - Lifecycle Methods (Component Lifecycle)
