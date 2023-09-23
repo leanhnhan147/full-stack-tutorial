@@ -1,5 +1,3 @@
-#
-
 ## Props (Properties)
 
 - Các props là đối số của function
